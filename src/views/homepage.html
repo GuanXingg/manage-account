@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/resources.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles//main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="homepage">
+        <section class="homepage-info">
+          <h1 class="homepage__title">Personal info</h1>
+          <div class="homepage__box">
+            <table class="homepage-info__table">
+              <tbody>
+                <tr>
+                  <th>Email:</th>
+                  <td colspan="2" id="info-email"></td>
+                </tr>
+                <tr>
+                  <th>Password:</th>
+                  <td>
+                    <input
+                      type="password"
+                      name="info-pass"
+                      value=""
+                      disabled
+                      id="info-pass"
+                      class="homepage-info__pass"
+                    />
+                  </td>
+                  <td><button class="homepage-info__btn">Show</button></td>
+                </tr>
+                <tr>
+                  <th>Name:</th>
+                  <td colspan="2" id="info-name"></td>
+                </tr>
+                <tr>
+                  <th>Age:</th>
+                  <td colspan="2" id="info-age"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="homepage-edit">
+          <h1 class="homepage__title">Change your information</h1>
+          <form class="homepage__box homepage__form">
+            <table class="homepage-edit__table">
+              <tbody>
+                <tr>
+                  <th>Name:</th>
+                  <td colspan="2">
+                    <input id="edit-name" class="homepage-edit__input" />
+                    <p id="warning-name" class="homepage-edit__warning">*</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Age:</th>
+                  <td colspan="2">
+                    <input id="edit-age" class="homepage-edit__input" />
+                    <p id="warning-age" class="homepage-edit__warning">*</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Change password:</th>
+                  <td>
+                    <input type="password" id="edit-pass" class="homepage-edit__input" />
+                    <p id="warning-pass" class="homepage-edit__warning">*</p>
+                  </td>
+                  <td><button type="button" class="homepage-edit__btn">Show</button></td>
+                </tr>
+                <tr>
+                  <th>Re-enter new password:</th>
+                  <td>
+                    <input type="password" id="edit-repass" class="homepage-edit__input" />
+                    <p id="warning-repass" class="homepage-edit__warning">*</p>
+                  </td>
+                  <td><button type="button" class="homepage-edit__btn">Show</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="homepage-edit__submit">Change</button>
+          </form>
+          <button class="homepage__delete">Delete Account</button>
+        </section>
+
+        <button class="homepage__logout">Log out</button>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../scripts/homepage.js"></script>
+  </body>
+</html>

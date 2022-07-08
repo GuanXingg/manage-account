@@ -1,0 +1,53 @@
+@mixin flexBox($justify: flex-start, $align: flex-start, $direction: false, $wrap: false) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  @if $direction {
+    flex-direction: $direction;
+  }
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
+}
+
+@mixin boxSize($type: 'both', $width: auto, $height: $width) {
+  @if $type == 'both' {
+    width: $width;
+    height: $height;
+  }
+  @if $type == 'width' {
+    width: $width;
+  }
+  @if $type == 'height' {
+    height: $height;
+  }
+}
+
+@mixin centerBox($direction: 'both') {
+  position: absolute;
+  @if $direction == 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @if $direction == 'left' {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  @if $direction == 'right' {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  @if $direction == 'top' {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @if $direction == 'bottom' {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+}

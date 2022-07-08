@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../src/styles/resources.css" />
+    <link rel="stylesheet" href="../src/styles/reset.css" />
+    <link rel="stylesheet" href="../src/styles/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="login">
+        <form class="login-form">
+          <h3 class="login__title">Login</h3>
+          <p class="login__description">
+            Welcome to my project, first you need to fill you account
+          </p>
+          <div class="login-form__group">
+            <input name="email" placeholder="Email" class="login-form__input" />
+            <label class="login-form__label">Email</label>
+            <p id="email-warning" class="login-form__warning">*</p>
+          </div>
+          <div class="login-form__group">
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              autocomplete="on"
+              class="login-form__input"
+            />
+            <label class="login-form__label">Password</label>
+            <p id="password-warning" class="login-form__warning">*</p>
+            <div class="login-form__toggle">
+              <i
+                id="hide-password"
+                class="login-form__toggle-icon login-form__toggle-icon--close fa-solid fa-eye-slash"
+              ></i>
+              <i
+                id="show-password"
+                class="login-form__toggle-icon login-form__toggle-icon--open fa-solid fa-eye"
+              ></i>
+            </div>
+          </div>
+          <p class="login-form__forgot">
+            <a href="#" class="login-form__link">Forgot password?</a>
+          </p>
+          <button class="login-form__submit">Log in</button>
+          <p class="login-form__signup">
+            Don't have account?
+            <a href="../src/views/signup.html" class="login-form__link">Sign up</a>
+          </p>
+        </form>
+        <section class="login-wallpaper"></section>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../src/scripts/validationLogin.js"></script>
+  </body>
+</html>

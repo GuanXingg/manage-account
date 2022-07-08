@@ -1,0 +1,22 @@
+{
+  "currentId": {
+    "currentAcc": 1,
+    "currentInfo": 1
+  },
+  "account": [
+    {
+      "id": 1,
+      "email": "taoquapro309@gmail.com",
+      "password": "HungH@3921",
+      "idInfo": 1
+    }
+  ],
+  "info": [
+    {
+      "id": 1,
+      "idAcc": 1,
+      "name": "Michale",
+      "age": "50"
+    }
+  ]
+}

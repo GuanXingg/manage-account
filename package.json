@@ -1,0 +1,27 @@
+{
+  "name": "manage-account",
+  "version": "1.0.0",
+  "description": "- Website manage account and their information.\r - When login, sign up, edit information,...etc, their also have validation.\r - Designs are download in dribble and store in \"design\" folder.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json-server": "json-server ./src/db.json",
+    "main-sass": "sass ./src/sass/main.scss ./src/styles/main.css --watch",
+    "reset-sass": "sass ./src/sass/reset.scss ./src/styles/reset.css --watch",
+    "resource-sass": "sass ./src/sass/resources.scss ./src/styles/resources.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuanXingg/manage-account-study-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuanXingg/manage-account-study-/issues"
+  },
+  "homepage": "https://github.com/GuanXingg/manage-account-study-#readme",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "sass": "^1.53.0"
+  }
+}

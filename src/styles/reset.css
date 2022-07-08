@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+input, button, textarea {
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.wrapper {
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=reset.css.map */
