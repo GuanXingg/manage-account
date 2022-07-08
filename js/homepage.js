@@ -1,5 +1,5 @@
 let loginInfo = JSON.parse(sessionStorage.getItem('loginInfo'));
-if (typeof loginInfo === null) window.location.assign('/public/index.html');
+if (typeof loginInfo === null) window.location.assign('../index.html');
 else {
   let accInfo = {
     id: '',

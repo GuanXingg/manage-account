@@ -68,7 +68,7 @@ const checkDatabase = (email, password) => {
       if (flag) {
         alert('Congratulation');
         sessionStorage.setItem('loginInfo', JSON.stringify(accountInfo));
-        window.location.assign('/src/views/homepage.html');
+        window.location.assign('/views/homepage.html');
       } else alert('wrong email or password');
     });
 };

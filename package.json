@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "json-server": "json-server ./src/db.json",
-    "main-sass": "sass ./src/sass/main.scss ./src/styles/main.css --watch",
-    "reset-sass": "sass ./src/sass/reset.scss ./src/styles/reset.css --watch",
-    "resource-sass": "sass ./src/sass/resources.scss ./src/styles/resources.css --watch"
+    "json-server": "json-server ./db.json",
+    "main-sass": "sass ./sass/main.scss ./css/main.css --watch",
+    "reset-sass": "sass ./sass/reset.scss ./css/reset.css --watch",
+    "resource-sass": "sass ./sass/resources.scss ./css/resources.css --watch"
   },
   "repository": {
     "type": "git",
