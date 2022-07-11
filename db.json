@@ -1,22 +1,17 @@
 {
-  "currentId": {
-    "currentAcc": 1,
-    "currentInfo": 1
-  },
-  "account": [
+  "accounts": [
     {
       "id": 1,
-      "email": "taoquapro309@gmail.com",
-      "password": "HungH@3921",
-      "idInfo": 1
+      "email": "admin@gmail.com",
+      "password": "admin123"
     }
   ],
-  "info": [
+  "infos": [
     {
       "id": 1,
-      "idAcc": 1,
-      "name": "Michale",
-      "age": "50"
+      "name": "Hà Quán Hưng",
+      "age": 22,
+      "accountId": 1
     }
   ]
 }

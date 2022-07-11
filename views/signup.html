@@ -1,106 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="../css/resources.css" />
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css//main.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <section class="signup">
-        <form class="signup-form">
-          <h3 class="signup__title">Sign up</h3>
-          <p class="signup__description">
-            Welcome to my project, first you need to fill you account
-          </p>
-          <div class="signup-form__group">
-            <input name="email" placeholder="Email" class="signup-form__input" />
-            <label class="signup-form__label">Email</label>
-            <p id="email-warning" class="signup-form__warning">*</p>
-          </div>
-          <div class="signup-form__group">
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              autocomplete="on"
-              class="signup-form__input"
-            />
-            <label class="signup-form__label">Password</label>
-            <p id="password-warning" class="signup-form__warning">*</p>
-            <div id="password-toggle" class="signup-form__toggle">
-              <i
-                id="hide-password"
-                class="signup-form__toggle-icon signup-form__toggle-icon--close fa-solid fa-eye-slash"
-              ></i>
-              <i
-                id="show-password"
-                class="signup-form__toggle-icon signup-form__toggle-icon--open fa-solid fa-eye"
-              ></i>
-            </div>
-          </div>
-          <div class="signup-form__group">
-            <input
-              type="password"
-              name="repassword"
-              placeholder="Re-enter password"
-              autocomplete="on"
-              class="signup-form__input"
-            />
-            <label class="signup-form__label">Re-enter password</label>
-            <p id="repassword-warning" class="signup-form__warning">*</p>
-            <div id="re-password-toggle" class="signup-form__toggle">
-              <i
-                id="hide-repassword"
-                class="signup-form__toggle-icon signup-form__toggle-icon--close fa-solid fa-eye-slash"
-              ></i>
-              <i
-                id="show-repassword"
-                class="signup-form__toggle-icon signup-form__toggle-icon--open fa-solid fa-eye"
-              ></i>
-            </div>
-          </div>
-          <ul class="signup-form__rules">
-            <li id="required-length" class="signup-form__rules-item">
-              Password must be at least 8 character
-            </li>
-            <li id="required-special" class="signup-form__rules-item">
-              Password must have at least 1 special character
-            </li>
-            <li id="required-lowercase" class="signup-form__rules-item">
-              Password must have at least 1 lowercase character
-            </li>
-            <li id="required-uppercase" class="signup-form__rules-item">
-              Password must have at least 1 uppercase character
-            </li>
-            <li id="required-numeric" class="signup-form__rules-item">
-              Password must have at least 1 numeric character
-            </li>
-          </ul>
-          <button class="signup-form__submit">Sign up</button>
-          <p class="signup-form__login">
-            Already have account? <a href="../index.html" class="signup-form__link">Log in</a>
-          </p>
-        </form>
-        <section class="signup-wallpaper"></section>
-      </section>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign up page</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="../css/resources.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css//main.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<section class="signup">
+				<form class="signup-form">
+					<h3 class="signup__title">Sign up</h3>
+					<p class="signup__description">
+						Welcome to my project, first you need to fill you account
+					</p>
+					<!-- Input email -->
+					<div class="signup-form__group">
+						<input
+							name="email"
+							placeholder="Email"
+							class="signup-form__input"
+						/>
+						<label class="signup-form__label">Email</label>
+						<p id="email-warning" class="signup-form__warning">*</p>
+					</div>
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../js/validationSignup.js"></script>
-  </body>
+					<!-- Input password -->
+					<div class="signup-form__group">
+						<input
+							type="password"
+							name="password"
+							placeholder="Password"
+							autocomplete="on"
+							class="signup-form__input"
+						/>
+						<label class="signup-form__label">Password</label>
+						<p id="password-warning" class="signup-form__warning">*</p>
+						<div class="signup-form__toggle">
+							<i
+								id="pass-hide"
+								class="signup-form__toggle-icon signup-form__toggle-icon--close fa-solid fa-eye-slash"
+							></i>
+							<i
+								id="pass-show"
+								class="signup-form__toggle-icon signup-form__toggle-icon--open fa-solid fa-eye"
+							></i>
+						</div>
+					</div>
+
+					<!-- Input re-password -->
+					<div class="signup-form__group">
+						<input
+							type="password"
+							name="repassword"
+							placeholder="Re-enter password"
+							autocomplete="on"
+							class="signup-form__input"
+						/>
+						<label class="signup-form__label">Re-enter password</label>
+						<p id="repassword-warning" class="signup-form__warning">*</p>
+						<div class="signup-form__toggle">
+							<i
+								id="repass-hide"
+								class="signup-form__toggle-icon signup-form__toggle-icon--close fa-solid fa-eye-slash"
+							></i>
+							<i
+								id="repass-show"
+								class="signup-form__toggle-icon signup-form__toggle-icon--open fa-solid fa-eye"
+							></i>
+						</div>
+					</div>
+
+					<!-- Rule validation -->
+					<ul class="signup-form__rules">
+						<li class="signup-form__rules-item">
+							Password must be at least 8 character
+						</li>
+						<li class="signup-form__rules-item">
+							Password must have at least 1 special character
+						</li>
+						<li class="signup-form__rules-item">
+							Password must have at least 1 lowercase character
+						</li>
+						<li class="signup-form__rules-item">
+							Password must have at least 1 uppercase character
+						</li>
+						<li class="signup-form__rules-item">
+							Password must have at least 1 numeric character
+						</li>
+					</ul>
+					<button class="signup-form__submit">Sign up</button>
+					<p class="signup-form__login">
+						Already have account?
+						<a href="../index.html" class="signup-form__link">Log in</a>
+					</p>
+				</form>
+				<section class="signup-wallpaper"></section>
+			</section>
+		</div>
+
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="../js/signup.js"></script>
+	</body>
 </html>

@@ -1,0 +1,48 @@
+@baseUrl = http://localhost:3000
+
+### Api accounts
+# @name getAllAccounts
+GET {{baseUrl}}/accounts?_start=3
+
+### ----------
+# @name addAccount
+POST {{baseUrl}}/accounts
+Content-Type: application/json
+
+{
+  "email": "taoquapro309@gmail.com",
+  "password": "HungH@2001"
+}
+### ----------
+# @name editAccount
+PUT {{baseUrl}}/accounts
+Content-Type: application/json
+
+### ----------
+# @name deleteAccount
+DELETE {{baseUrl}}/accounts
+
+
+
+### Api Infos
+# @name getAllInfos
+GET {{baseUrl}}/infos
+
+### ----------
+# @name addInfo
+POST {{baseUrl}}/infos
+Content-Type: application/json
+
+{
+  "name": "Hưng Thành",
+  "age": 35,
+  "accountId": 2
+}
+### ----------
+# @name editInfo
+PUT {{baseUrl}}/infos
+Content-Type: application/json
+
+### ----------
+# @name deleteInfo
+DELETE {{baseUrl}}/infos

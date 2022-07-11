@@ -414,5 +414,32 @@
   cursor: pointer;
   background-color: rgba(4, 138, 249, 0.8);
 }
+.homepage-show {
+  width: 80%;
+  margin: 2rem auto;
+}
+.homepage-show__table {
+  width: 100%;
+  text-align: left;
+}
+.homepage-show__table td, .homepage-show__table th {
+  padding: 1.5rem;
+  width: 16.6666666667%;
+  border-bottom: 1px solid #000;
+}
+.homepage-show__table th {
+  font-weight: bold;
+}
+.homepage-show__del {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: #f00;
+  color: #fff;
+}
+.homepage-show__del:hover {
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.8);
+}
 
 /*# sourceMappingURL=main.css.map */

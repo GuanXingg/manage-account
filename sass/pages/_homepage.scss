@@ -1,150 +1,183 @@
 .homepage {
-  &__title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
+	&__title {
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
 
-  &__box {
-    margin-top: 1.5rem;
-    padding: 2rem;
-    box-shadow: 0 0 0.5rem rgba(#000, 0.5);
-  }
+	&__box {
+		margin-top: 1.5rem;
+		padding: 2rem;
+		box-shadow: 0 0 0.5rem rgba(#000, 0.5);
+	}
 
-  &__logout {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    padding: 1rem 1.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: transparent;
-    font-weight: bold;
-    color: $primary-color;
-    transition: 0.2s;
-    &:hover {
-      cursor: pointer;
-      background-color: #eee;
-    }
-  }
+	&__logout {
+		position: absolute;
+		top: 5%;
+		right: 5%;
+		padding: 1rem 1.5rem;
+		border: none;
+		border-radius: 0.5rem;
+		background-color: transparent;
+		font-weight: bold;
+		color: $primary-color;
+		transition: 0.2s;
+		&:hover {
+			cursor: pointer;
+			background-color: #eee;
+		}
+	}
 
-  &__delete {
-    margin-top: 3rem;
-    padding: 1rem 0;
-    border: none;
-    border-radius: 0.5rem;
-    width: 100%;
-    background-color: #f00;
-    font-weight: bold;
-    color: #fff;
-    transition: 0.2s;
-    &:hover {
-      cursor: pointer;
-      background-color: rgba(#f00, 0.8);
-    }
-  }
+	&__delete {
+		margin-top: 3rem;
+		padding: 1rem 0;
+		border: none;
+		border-radius: 0.5rem;
+		width: 100%;
+		background-color: #f00;
+		font-weight: bold;
+		color: #fff;
+		transition: 0.2s;
+		&:hover {
+			cursor: pointer;
+			background-color: rgba(#f00, 0.8);
+		}
+	}
 
-  &-info,
-  &-edit {
-    width: 35%;
-  }
+	&-info,
+	&-edit {
+		width: 35%;
+	}
 
-  &-info {
-    margin: 5rem auto;
+	&-info {
+		margin: 5rem auto;
 
-    &__table {
-      width: 100%;
-      text-align: left;
+		&__table {
+			width: 100%;
+			text-align: left;
 
-      & td,
-      & th {
-        padding: 0.5rem 0;
-      }
+			& td,
+			& th {
+				padding: 0.5rem 0;
+			}
 
-      & th {
-        font-weight: bold;
-        width: 20%;
-      }
+			& th {
+				font-weight: bold;
+				width: 20%;
+			}
 
-      & td:nth-child(3) {
-        width: 10%;
-      }
-    }
+			& td:nth-child(3) {
+				width: 10%;
+			}
+		}
 
-    &__btn {
-      background-color: transparent;
-      border: none;
-      text-decoration: underline solid 1px;
-      color: blue;
-    }
+		&__btn {
+			background-color: transparent;
+			border: none;
+			text-decoration: underline solid 1px;
+			color: blue;
+		}
 
-    &__pass {
-      background-color: transparent;
-      border: none;
-    }
-  }
+		&__pass {
+			background-color: transparent;
+			border: none;
+		}
+	}
 
-  &-edit {
-    margin: 2rem auto;
+	&-edit {
+		margin: 2rem auto;
 
-    &__table {
-      width: 100%;
-      text-align: left;
+		&__table {
+			width: 100%;
+			text-align: left;
 
-      & td,
-      & th {
-        padding: 1rem 0;
-      }
+			& td,
+			& th {
+				padding: 1rem 0;
+			}
 
-      & th {
-        font-weight: bold;
-        width: 30%;
-      }
+			& th {
+				font-weight: bold;
+				width: 30%;
+			}
 
-      & td:nth-child(3) {
-        width: 15%;
-      }
-    }
+			& td:nth-child(3) {
+				width: 15%;
+			}
+		}
 
-    &__input {
-      padding: 0.5rem 0.1rem;
-      border: none;
-      border-bottom: 1px solid #000;
-      width: 100%;
-      transition: border-bottom 0.2s;
-      &:focus {
-        border-bottom: 1px solid $focus-input-color;
-      }
-    }
+		&__input {
+			padding: 0.5rem 0.1rem;
+			border: none;
+			border-bottom: 1px solid #000;
+			width: 100%;
+			transition: border-bottom 0.2s;
+			&:focus {
+				border-bottom: 1px solid $focus-input-color;
+			}
+		}
 
-    &__warning {
-      margin-top: 0.5rem;
-      font-style: italic;
-      color: #f00;
-      visibility: hidden;
-    }
+		&__warning {
+			margin-top: 0.5rem;
+			font-style: italic;
+			color: #f00;
+			visibility: hidden;
+		}
 
-    &__btn {
-      padding: 0 1rem;
-      border: none;
-      background-color: transparent;
-      text-decoration: underline solid 1px;
-      color: blue;
-    }
+		&__btn {
+			padding: 0 1rem;
+			border: none;
+			background-color: transparent;
+			text-decoration: underline solid 1px;
+			color: blue;
+		}
 
-    &__submit {
-      display: block;
-      margin: 2rem auto 0;
-      padding: 0.8rem 0;
-      width: 60%;
-      background-color: $primary-color;
-      color: #fff;
-      border: none;
-      transition: 0.2s;
-      &:hover {
-        cursor: pointer;
-        background-color: rgba($primary-color, 0.8);
-      }
-    }
-  }
+		&__submit {
+			display: block;
+			margin: 2rem auto 0;
+			padding: 0.8rem 0;
+			width: 60%;
+			background-color: $primary-color;
+			color: #fff;
+			border: none;
+			transition: 0.2s;
+			&:hover {
+				cursor: pointer;
+				background-color: rgba($primary-color, 0.8);
+			}
+		}
+	}
+
+	&-show {
+		width: 80%;
+		margin: 2rem auto;
+
+		&__table {
+			width: 100%;
+			text-align: left;
+
+			& td,
+			& th {
+				padding: 1.5rem;
+				width: calc(100% / 6);
+        border-bottom: 1px solid #000;
+			}
+
+			& th {
+				font-weight: bold;
+			}
+		}
+
+		&__del {
+			padding: 0.5rem 1rem;
+			border: none;
+			border-radius: 0.2rem;
+			background-color: #f00;
+			color: #fff;
+			&:hover {
+				cursor: pointer;
+				background-color: rgba(#f00, 0.8);
+			}
+		}
+	}
 }

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Homepage</title>
+		<title>Admin Homepage</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -39,7 +39,7 @@
 											name="info-pass"
 											value=""
 											disabled
-                      id="info-pass"
+											id="info-pass"
 											class="homepage-info__pass"
 										/>
 									</td>
@@ -57,54 +57,24 @@
 						</table>
 					</div>
 				</section>
-				<section class="homepage-edit">
-					<h1 class="homepage__title">Change your information</h1>
-					<form class="homepage__box homepage__form">
-						<table class="homepage-edit__table">
-							<tbody>
+
+				<section class="homepage-show">
+					<div class="homepage__box">
+						<table class="homepage-show__table">
+							<thead>
 								<tr>
-									<th>Name:</th>
-									<td colspan="2">
-										<input class="homepage-edit__input" />
-										<p class="homepage-edit__warning">*</p>
-									</td>
+									<th>Or.</th>
+									<th>Name</th>
+									<th>Age</th>
+									<th>Email</th>
+									<th>Password</th>
+									<th>Created date</th>
+									<th></th>
 								</tr>
-								<tr>
-									<th>Age:</th>
-									<td colspan="2">
-										<input class="homepage-edit__input" />
-										<p class="homepage-edit__warning">*</p>
-									</td>
-								</tr>
-								<tr>
-									<th>Change password:</th>
-									<td>
-										<input type="password" class="homepage-edit__input" />
-										<p class="homepage-edit__warning">*</p>
-									</td>
-									<td>
-										<button type="button" class="homepage-edit__btn">
-											Show
-										</button>
-									</td>
-								</tr>
-								<tr>
-									<th>Re-enter new password:</th>
-									<td>
-										<input type="password" class="homepage-edit__input" />
-										<p class="homepage-edit__warning">*</p>
-									</td>
-									<td>
-										<button type="button" class="homepage-edit__btn">
-											Show
-										</button>
-									</td>
-								</tr>
-							</tbody>
+							</thead>
+							<tbody></tbody>
 						</table>
-						<button class="homepage-edit__submit">Change</button>
-					</form>
-					<button class="homepage__delete">Delete Account</button>
+					</div>
 				</section>
 
 				<button class="homepage__logout">Log out</button>
@@ -113,6 +83,6 @@
 
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 		<!-- <script src="../js/homepage.js"></script> -->
-		<script src="../js/main.js"></script>
+		<script src="../js/admin.js"></script>
 	</body>
 </html>
