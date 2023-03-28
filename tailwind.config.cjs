@@ -1,0 +1,58 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      screens: {
+        sm: '576px',
+      },
+      colors: {
+        primary: '#000',
+        secondary: '#fff',
+        third: '#ccc',
+        active: '#75B1E9',
+        text: '#ccc',
+      },
+      spacing: {
+        5: '0.5rem',
+        10: '1rem',
+        15: '1.5rem',
+        20: '2rem',
+        25: '2.5rem',
+        30: '3rem',
+        35: '3.5rem',
+        40: '4rem',
+        45: '4.5rem',
+        50: '5rem',
+        60: '6rem',
+        70: '7rem',
+        80: '8rem',
+        90: '9rem',
+        100: '10rem',
+      },
+      fontSize: {
+        12: '1.2rem',
+        13: '1.3rem',
+        14: '1.4rem',
+        15: '1.5rem',
+        16: '1.6rem',
+        18: '1.8rem',
+        20: '2rem',
+        22: '2.2rem',
+        24: '2.4rem',
+        25: '2.5rem',
+        26: '2.6rem',
+        28: '2.8rem',
+        30: '3rem',
+        35: '3.5rem',
+        40: '4rem',
+      },
+      borderRadius: {
+        2: '0.2rem',
+        5: '0.5rem',
+        10: '1rem',
+      },
+    },
+  },
+  plugins: [],
+};

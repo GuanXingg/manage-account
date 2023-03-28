@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './vendors/meyerweb.min';
+@import './vendors/grid.min';
+
+@import './helper/variables';
+@import './helper/mixin';
+
+@import './base/reset';
+@import './base/custom';
+
+@layer components {
+  @import './components/layouts';
+}

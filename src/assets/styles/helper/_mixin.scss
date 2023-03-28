@@ -1,0 +1,88 @@
+@mixin boxSize($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flexBox($direct: null, $justify: null, $align: null, $wrap: null) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direct;
+  flex-wrap: $wrap;
+}
+
+@mixin flexCenter($pos) {
+  display: flex;
+
+  @if $pos == center {
+    justify-content: center;
+    align-items: center;
+  } @else if $pos == ver {
+    align-items: center;
+  } @else if $pos == hor {
+    justify-content: center;
+  }
+}
+
+@mixin flexItemSize($size) {
+  flex-basis: $size;
+  width: $size;
+}
+
+@mixin posElement($pos, $top: null, $left: null, $right: null, $bottom: null, $zIndex: null) {
+  position: $pos;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+  z-index: $zIndex;
+}
+
+@mixin posInsetElement($pos, $top, $right: null, $bottom: null, $left: null, $zIndex: null) {
+  position: $pos;
+  inset: $top $right $bottom $left;
+  z-index: $zIndex;
+}
+
+@mixin fontStyle($size: null, $weight: null, $color: null, $italic: null, $lineHeight: null) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $italic;
+  line-height: $lineHeight;
+}
+
+@mixin truncateText($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin responsive($canvas) {
+  @if $canvas == sm {
+    @media all and (min-width: $screen-sm) {
+      @content;
+    }
+  } @else if $canvas == md {
+    @media all and (min-width: $screen-md) {
+      @content;
+    }
+  } @else if $canvas == lg {
+    @media all and (min-width: $screen-lg) {
+      @content;
+    }
+  } @else if $canvas == xl {
+    @media all and (min-width: $screen-xl) {
+      @content;
+    }
+  } @else if $canvas == xxl {
+    @media all and (min-width: $screen-xxl) {
+      @content;
+    }
+  } @else if $canvas == mobile {
+    @media all and (max-width: ($screen-all-mobile - 1px)) and (orientation: landscape) {
+      @content;
+    }
+  }
+}

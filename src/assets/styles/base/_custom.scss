@@ -1,0 +1,6 @@
+.App {
+  @include flexBox(column);
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: $text-14;
+}
